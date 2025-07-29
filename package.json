@@ -1,0 +1,27 @@
+{
+  "name": "freelance-hunter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deorin/freelance-hunter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Deorin/freelance-hunter/issues"
+  },
+  "homepage": "https://github.com/Deorin/freelance-hunter#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "openai": "^5.10.2",
+    "pg": "^8.16.3",
+    "playwright": "^1.54.1"
+  }
+}
