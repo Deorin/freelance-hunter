@@ -1,14 +1,14 @@
 # Começa com a imagem oficial do n8n
 FROM n8nio/n8n
 
-# Vai para o diretório de dados do n8n
-WORKDIR /data
+# **MUDANÇA PRINCIPAL AQUI**
+# Define o diretório de trabalho para /home/node, o padrão do n8n.
+WORKDIR /home/node
 
-# Copia os arquivos do nosso robô para dentro do container do n8n
-# O ponto '.' significa "copiar tudo da pasta atual (do nosso projeto)"
+# Copia os arquivos do nosso robô para dentro do diretório de trabalho
 COPY . .
 
-# Instala as dependências do nosso robô (playwright, pg, etc.)
+# Instala as dependências do nosso robô
 # O --unsafe-perm é necessário para rodar como root dentro do container
 RUN npm install --unsafe-perm
 
